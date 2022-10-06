@@ -1,0 +1,11 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Proyecto N°3 (DashBoard) perteneciente al bootcamp FullStack perteneciente a UDD.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matias Parada",
+  "license": "ISC"
+}
