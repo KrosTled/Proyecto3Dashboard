@@ -1,0 +1,57 @@
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.main{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* .main > div {
+    margin: 10px;
+} */
+.userDiv{
+    display: flex;
+    height: 100px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.columna{
+    width: 600px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.userDiv > div {
+    margin: 10px;
+}
+.controlDiv{
+    height: 750px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.infoDiv{
+    width: 600px;
+    background-color: rgb(167, 167, 167);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.centerDiv{
+    height: 425px;
+}
+.rightDiv{
+    height: 860px;
+}
+footer{
+    background-color: gray;
+    height: 47px;
+    margin-bottom: 0;
+    margin-right: 0;
+}
