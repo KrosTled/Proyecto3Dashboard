@@ -2,7 +2,8 @@
   "name": "dashboard",
   "version": "1.0.0",
   "description": "Proyecto N°3 (DashBoard) perteneciente al bootcamp FullStack perteneciente a UDD.",
-  "main": "main.js",
+  "main": "./js/main.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
