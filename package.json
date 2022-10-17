@@ -8,5 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matias Parada",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.2.10",
+    "request": "^2.88.2",
+    "scramjet": "^4.36.8"
+  }
 }

@@ -1,0 +1,22 @@
+import request from "request"
+
+const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=AAPL&apikey=07FFNGO9PL6ZV5QO'
+
+async function trying2(){
+    let response = await request.get({
+        url: url,
+        json: true,
+        headers: {'User-Agent': 'request'}
+      }, (err, res, data) => {
+        if (err) {
+          console.log('Error:', err);
+        } else if (res.statusCode !== 200) {
+          console.log('Status:', res.statusCode);
+        } else {
+          // data is successfully parsed as a JSON object:
+          console.log(data);
+        }
+    });
+}
+
+trying2()
