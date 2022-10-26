@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,11 +30,14 @@
                     <form>
                         <div class="row row-cols-2 p-3">
                             <label class="col" for="startDate">Fecha de inicio</label>
-                            <input class="col" type="date" name="startDate" id="startDate">                       
+                            <input class="col" type="date" name="startDate" id="startDate" placeholder="">                       
                         </div>
                         <div class="row row-cols-2 p-3">
                             <label class="col" for="endDate">Fecha de fin</label>
-                            <input class="col" type="date" name="endDate" id="endDate">
+                            <input class="col" type="date" name="endDate" id="endDate" placeholder="">
+                        </div>
+                        <div>
+                            <button id="start" type="button">Iniciar</button>
                         </div>
                     </form>
                 </div>
@@ -42,9 +45,7 @@
             <div class="columna">
                 <div id="graphic" class="infoDiv graphicDiv centerDiv bg-gradient border p-5">
                     <canvas id="myChart" width="500" height="300"></canvas>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                    <script src="./js/graph.js"></script>
-                    <script src="./js/graphConfig.js"></script>                                                             
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>                                                            
                 </div>
                 <div class="infoDiv centerDiv bg-gradient border p-5">
                     <table class="table">
@@ -98,7 +99,7 @@
                 </div>
             </div>
             <div class="columna">
-                <div class="infoDiv rightDiv bg-gradient border">
+                <div id="exampleDiv" class="infoDiv rightDiv bg-gradient border">
                     adadadsd
                 </div>
             </div>

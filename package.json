@@ -3,15 +3,11 @@
   "version": "1.0.0",
   "description": "Proyecto N°3 (DashBoard) perteneciente al bootcamp FullStack perteneciente a UDD.",
   "main": "./js/main.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matias Parada",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "node-fetch": "^3.2.10",
-    "request": "^2.88.2",
-    "scramjet": "^4.36.8"
   }
 }
