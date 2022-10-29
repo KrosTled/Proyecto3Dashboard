@@ -17,13 +17,16 @@
                     <div>
                         <img src="http://placekitten.com/75/75" alt="PlaceHolder">
                     </div>
-                    <div>
-                        <div>
-                            Nombre
+                    <div class="userRol bg-gradient row">
+                        <div class="col">
+                            <div>
+                                Nombre: Gato De Ejemplo
+                            </div>
+                            <div>
+                                Rol: CEO
+                            </div>
                         </div>
-                        <div>
-                            Rol
-                        </div>
+                        <div class="col logOut"><img src="./img/logout-line-icon.webp" alt="logOut" style="width: 40px;"></div>
                     </div>
                 </div>
                 <div class="bg-secondary bg-gradient controlDiv p-5">
@@ -35,9 +38,6 @@
                         <div class="row row-cols-2 p-3">
                             <label class="col" for="endDate">Fecha de fin</label>
                             <input class="col" type="date" name="endDate" id="endDate" placeholder="">
-                        </div>
-                        <div>
-                            <button id="start" type="button">Iniciar</button>
                         </div>
                         <div class="row row-cols-2 p-3">
                             <button id="aapl" class="apiButton">Apple</button>
@@ -71,85 +71,53 @@
                             <button id="ADSK" class="apiButton">Autodesk</button>
                             <button id="RAZFF" class="apiButton">Razer Inc</button>                
                         </div>
+                        <div class="row row-cols-2 p-3">
+                            <button id="WMT" class="apiButton">Walmart</button>
+                            <button id="NTDOY" class="apiButton">Nintendo</button>                
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="columna">
                 <div id="graphic" class="infoDiv graphicDiv centerDiv bg-gradient border p-5">
                     <canvas id="myChart" width="500" height="300"></canvas>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>                                                            
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>                                                       
                 </div>
-                <div class="infoDiv centerDiv bg-gradient border p-5">
+                <div class="tableDiv centerDiv bg-gradient">
                     <table class="table">
-                        <thead>
+                        <thead class="thead bg-gradient">
                             <tr>
-                                <th>Now</th>
-                                <th>Now</th>
-                                <th>Now</th>
-                                <th>Now</th>
+                                <th>Fecha</th>
+                                <th>Apertura</th>
+                                <th>Maximo</th>
+                                <th>cierre</th>
                             </tr> 
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                            </tr>
-                            <tr>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                            </tr>
-                            <tr>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                            </tr>
-                            <tr>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                            </tr>
-                            <tr>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                            </tr>
-                            <tr>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                                <td>Data</td>
-                            </tr>   
+                        <tbody id="tBody" class="tbodt bg-gradient">
                         </tbody> 
                     </table>
                 </div>
             </div>
             <div class="columna">
                 <div id="exampleDiv" class="infoDiv rightDiv bg-gradient border">
-                    <div class="container">
+                    <div class="container centrado">
                         <h2>Instrucciones de uso.</h2>
-                        <p>1.- Presionar un boton con la compañia a revisar.</p>
-                        <p>2.- Una vez se muestre, se podra cambiar las fechas a revisar.</p>
+                        <p>1.- Marque las fechas que se desean revisar(En caso de no tener fechas en especifico se revisara todo el historial disponible).</p>
+                        <p>2.- Presione el boton de la compañia a revisar.</p>
                         <p>3.- Para cambiar de compañia, simplemente presione otro boton.</p>
                         <h2>Explicacion del grafico.</h2>
                         <p>En la parte superior se encuentra el "ticker" de la accion.</p>
+                        <p>a la izquierda aparecera su valor en la bolsa con el dolar como moneda</p>
                         <h2>A que mercado pertenece.</h2>
                         <p>La API usa datos perteneciente a la bolsa de EEUU.</p>
                     </div>
-                   
                 </div>
             </div>
         </div>  
     </div>
     <footer>
         <div>
-            <p>Pagina hecha por</p>
+            <p>Pagina hecha por: Matias Parada</p>
         </div>
     </footer>
     <script type="module" src="./js/main.js"></script>

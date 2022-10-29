@@ -6,6 +6,9 @@ body{
     height: 100%;
     overflow-x: hidden;
 }
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .main{
     display: flex;
     margin-left: 10px;
@@ -31,6 +34,15 @@ body{
 .userDiv > div {
     margin: 10px;
 }
+.userRol{
+    background-color: rgb(199, 199, 199);
+    width: 500px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+.logOut{
+        margin-left:15px;
+}
 .controlDiv{
     height: 750px;
     width: 600px;
@@ -47,11 +59,39 @@ body{
     height: 425px;
 }
 .rightDiv{
+    display: flex;
+    align-items: center;
     height: 860px;
+    
 }
 footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-right: 15px;
     background-color: gray;
     height: 47px;
     margin-bottom: 0;
     margin-right: 0;
+}
+.tableDiv{
+    width: 600px;
+    background-color: rgb(167, 167, 167);
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+.thead{
+    background-color: grey;
+}
+.tbody{
+    height: 384px;
+}
+.centrado{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
 }

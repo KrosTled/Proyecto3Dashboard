@@ -1,5 +1,0 @@
-function genTabla(){
-    
-}
-
-export {genTabla}
